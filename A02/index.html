@@ -18,37 +18,41 @@
                     <li>
                         <a href="#">재단소개</a>
                         <ul class="submenu">
-                            <li><a href="#"></a>설립취지</li>
-                            <li><a href="#"></a>연혁</li>
-                            <li><a href="#"></a>찾아오시는길</li>
+                            <li><a href="#">설립취지</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">후원하기</a>
                         <ul class="submenu">
-                            <li><a href="#"></a>국내후원</li>
-                            <li><a href="#"></a>국외후원</li>
-                            <li><a href="#"></a>맞춤후원</li>
+                            <li><a href="#">국내후원</a></li>
+                            <li><a href="#">국외후원</a></li>
+                            <li><a href="#">맞춤후원</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">자료실</a>
                         <ul class="submenu">
-                            <li><a href="#"></a>서식자료실</li>
-                            <li><a href="#"></a>사진자료실</li>
-                            <li><a href="#"></a>후원양식</li>
+                            <li><a href="#">서식자료실</a></li>
+                            <li><a href="#">사진자료실</a></li>
+                            <li><a href="#">후원양식</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">스토리</a>
                         <ul class="submenu">
-                            <li><a href="#"></a>웹진</li>
-                            <li><a href="#"></a>보고서</li>
-                            <li><a href="#"></a>나의 후원</li>
+                            <li><a href="#">웹진</a></li>
+                            <li><a href="#">보고서</a></li>
+                            <li><a href="#">나의 후원</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
+
+            <div id="mBack">
+
+            </div>
         </header>
 
         <div id="slide">
@@ -67,7 +71,8 @@
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td><a href="#" class="pop" >서울특별시약사회와 함께하는 의료비지원사업  </a></td>
+                        <!-- 제이쿼리에서 event.preventDefault(); 쓰면 하이퍼링크 적용 안되게 할 수 있음. -->
+                        <td><a href="http://www.naver.com" class="pop"   >서울특별시약사회와 함께하는 의료비지원사업  </a></td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -101,9 +106,11 @@
             </div>
             <div id="banner">
                 <h2>정기후원안내</h2>
+                <img src="images/donation.png" alt="배너 정기후원 이미지">
                 <a href="#"><button id="donation">->후원하기</button></a>
             </div>
         </section>
+        
         <footer>
             <div id="flogo">
                 <a href="#"><img src="images/flogo.png" alt="footer 로고"></a>
@@ -118,7 +125,7 @@
                 <select id="url" onchange="window.open(value,'_blank')">
                     <option value="#">패밀리 사이트</option>
                     <option value="http://www.naver.com" >그린의료재단</option>
-                    <option value="http://www.daum.com" >그린장학재단</option>
+                    <option value="http://www.daum.net" >그린장학재단</option>
                     <option value="http://www.google.com" >그린노인요양병원</option>
                 </select>
             </div>
