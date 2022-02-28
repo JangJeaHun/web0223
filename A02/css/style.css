@@ -144,6 +144,11 @@ section>h2{
     float: left;
     width: 33.33%;
     padding: 5px;
+    transition-duration: 0.5s;
+}
+
+#gallery img:hover{
+    transform: rotate( 5deg );
 }
 
 #banner{

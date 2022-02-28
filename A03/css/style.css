@@ -1,0 +1,58 @@
+*{
+    font-size: 12px;
+    font-family: "맑은 고딕","sans-serif";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333333;
+    background-color: #ffffff;
+}
+/*
+#40407a
+#706fd3
+#f7f1e3
+#2c2c54
+#474787
+#33d9b2
+
+*/
+
+#wrap{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+a:visited, a:link{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+header{
+    height: 100px;
+};
+
+nav li{
+    float: left;
+}
+
+
+
+#slide{
+    height: 300px;
+};
+
+
+#content{
+    height: 200px;
+};
+
+
+footer{
+    height: 100px;
+};

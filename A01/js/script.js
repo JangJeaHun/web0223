@@ -16,6 +16,7 @@ function slide() {
         },
         400
       )
+      
       .animate({ top: "100%" }, 0);
 
     if (idx < 2) {
