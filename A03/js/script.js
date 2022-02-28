@@ -3,7 +3,7 @@ $(document).ready(function(){
     var idx=0;
 
     setInterval(function(){
-        $("#silde>a").eq(idx).fadeOut(400);
+        $("#slide>a").eq(idx).fadeOut(300);
 
         if(idx<2){
             idx++;
@@ -11,7 +11,7 @@ $(document).ready(function(){
             idx=0;
         }
 
-        $("#silde>a").eq(idx).fadeIn(400);
+        $("#slide>a").eq(idx).fadeIn(300);
 
     },3000);
 
