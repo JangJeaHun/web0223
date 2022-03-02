@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "맑은 고딕","돋움","sans-serif";
+    font-size: 12px;
+    color: #333333;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+a:visited, a:link{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+nav ul{
+    list-style: none;
+}
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*
+#1b9cfc
+#0097e6
+#8c7ae6
+#40739e
+#353b48
+#e84118
+#c23616
+*/
+
+header{
+    height: 100px;
+    position: relative;
+}
+#logo{
+    padding: 25px 5px;
+}
+header>nav{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 8;
+}
+#gnb>li{
+    float: left;
+    text-align: center;
+
+}
+#gnb>li>a{
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    transition-duration: 0.4s;
+    
+}
+#gnb>li:hover>a{
+    font-weight: bold;
+    background-color: #1b9cfc;
+}
+
+
+.submenu a{
+    display: block;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: #1b9afc93;
+}
+.submenu a:hover{
+    background-color: #1b9cfc;
+}
+#mBack{
+    position: absolute;
+    top: 100%;
+    height: 90px;
+    background-color: #1b9afc93;
+    z-index: 7;
+    width: 100%;
+
+}
+
+
+#slide{
+    height: 300px;
+    position: relative;
+}
+#slide>a{
+    position: absolute;
+    display: none;
+}
+#slide>a:first-child{
+    display: block;
+}
+
+section{
+    height: 200px;
+}
+section>article{
+    float: left;
+    padding-top: 5px;
+    height: 100%;
+}
+section h2{
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+
+#notice{
+width: 30%;
+}
+
+
+
+
+
+#gallery{
+width: 40%;
+}
+#gallery img{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    transition-duration: 0.4s;
+}
+#gallery img:hover{
+    opacity: 0.8;
+}
+
+
+#quick{
+width: 30%;
+padding-top: 10px;
+}
+#quick>a{
+    display: block;
+    width: 33.33%;
+    float: left;
+    padding-top: 10px;
+}
+#quick>a>img{
+    width: 100%;
+    padding: 20px;
+}
+#quick>a>p{
+    text-align: center;
+    line-height: 30px;
+}
+#quick>a:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+
+
+footer{
+    height: 100px;
+}
