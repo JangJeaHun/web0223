@@ -32,14 +32,7 @@ function slide(){
 
 
 function tab(){
-    $("#tab>li").click(function(){
-
-        var idx = $(this).index();
-        $("#content>div").eq(idx).show().siblings("div").hide();
-        $(this).addClass("selected").siblings("li").removeClass();
-
-
-    })
+    
 }
 function popup(){
     $(".pop").click(function(){
@@ -47,5 +40,15 @@ function popup(){
     })
     $(".close").click(function(){
         $("#popup").fadeOut();
+    })
+}
+
+function tab(){
+    $("#tab>li").click(function(){
+        var idx = $(this).index();
+
+        $("#content>div").eq(idx).show().siblings("div").hide();
+        $(this).addClass("selected").siblings("li").removeClass();
+
     })
 }
