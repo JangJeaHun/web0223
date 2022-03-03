@@ -3,15 +3,17 @@
     padding: 0;
     font-family: "맑은 고딕","돋움","sans-serif";
     font-size: 12px;
-    color: #333333;
     box-sizing: border-box;
-    background-color: #ffffff;
 }
 a:visited, a:link{
     color: inherit;
     text-decoration: none;
 }
+body{
+    color: #333333;
+    background-color: #ffffff;
 
+}
 
 nav ul{
     list-style: none;
@@ -19,6 +21,7 @@ nav ul{
 #wrap{
     width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 /*
 #1b9cfc
@@ -41,7 +44,7 @@ header>nav{
     position: absolute;
     top: 60px;
     right: 20px;
-    z-index: 8;
+    z-index: 9;
 }
 #gnb>li{
     float: left;
@@ -62,25 +65,29 @@ header>nav{
     background-color: #1b9cfc;
 }
 
-
-.submenu a{
-    display: block;
-    height: 30px;
-    font-size: 16px;
-    line-height: 30px;
+.submenu{
+    display: none;
+}
+.submenu>li:hover{
     background-color: #1b9afc93;
+    font-weight: 700;
 }
-.submenu a:hover{
-    background-color: #1b9cfc;
+.submenu a{
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    color: white;
+
 }
+
 #mBack{
+    display: none;
     position: absolute;
     top: 100%;
-    height: 90px;
+    height: 120px;
     background-color: #1b9afc93;
     z-index: 7;
     width: 100%;
-
 }
 
 
@@ -95,13 +102,52 @@ header>nav{
 #slide>a:first-child{
     display: block;
 }
+#slide:hover [class*=fa-arrow]{
+    display: block;
+    opacity: 0.7;
+    transition-duration: 0.4s;
+}
+#slide [class*=fa-arrow]{
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    top: 110px;
+    margin: 20px;
+    opacity: 0;
+}
+#slide .next{
+    right: 0;
+}
+#indicator{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#indicator>li{
+    list-style: none;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    text-align: center;
+    line-height: 20px;
+}
+#indicator>.current{
+    background: #333333;
+    color: white;
+}
+
 
 section{
     height: 200px;
 }
 section>article{
     float: left;
-    padding-top: 5px;
+    padding: 5px;
     height: 100%;
 }
 section h2{
@@ -115,10 +161,21 @@ section h2{
 #notice{
 width: 30%;
 }
-
-
-
-
+#notice>table{
+    width: 100%;
+}
+#notice>td:last-child{
+    text-align: center;
+}
+#notice td, #notice tr{
+    padding: 3px 0;
+}
+#notice td{
+    border-top: 1px dotted #ccc;
+}
+#notice a:hover{
+    text-decoration: underline;
+}
 
 #gallery{
 width: 40%;
@@ -162,4 +219,43 @@ padding-top: 10px;
 
 footer{
     height: 100px;
+    display: flex;
+    padding: 5px;
+    background-color: #333333;
+    color: white;
+}
+footer a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#fl{
+    width: 900px;
+}
+#fl>p{
+    padding: 5px 0;
+    line-height: 20px;
+}
+#family{
+    width: 200px;
+}
+#popup{
+    display: none;
+    position: absolute;
+    background-color: #ccc;
+    width: 550px;
+    height: 270px;
+    top: 300px;
+    left: 400px;
+}
+#popup>h2{
+    font-size: 16px;
+    padding: 10px;
+}
+#popup>p{
+    padding: 10px;
+}
+#popup button{
+    padding: 5px 10px;
+    float: right;
 }
