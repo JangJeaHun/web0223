@@ -1,0 +1,255 @@
+*{
+    font-size: 12px;
+    font-family: "맑은 고딕",sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffffff;
+    color: #333333;
+}
+nav ul{
+    list-style: none;
+}
+a:visited, a:link{
+    text-decoration: none;
+    color: inherit;
+}
+.innerDiv{
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+/*
+#81ecec
+#74b9ff
+#55efc4
+#0984e3
+*/
+
+
+header{
+    width: 100vw;
+    height: 100px;
+    background-color: #ccc;
+}
+#logo{
+    padding: 25px 0;
+}
+nav{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    z-index: 9;
+}
+#gnb{
+    top: 10px;
+    right: 10px;
+}
+#gnb>li{
+    float: left;
+    text-align: center; 
+}
+#gnb>li>a{
+    height: 40px;
+    width: 160px;
+    line-height: 40px;
+    display: block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+#gnb>li:hover>a{
+    background-color: #74b9ff;
+    color: black;
+    font-weight: bold;
+}
+.submenu{
+    background-color: #81ecec;
+    height: 160px;
+    display: none;
+}
+
+.submenu a{
+    display: block;
+    height: 40px;
+    width: 160px;
+    line-height: 40px;
+    transition-duration: 0.4s;
+}
+.submenu a:hover{
+    background-color: #74b9ff;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+#slide{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+#slide>a{
+    position: absolute;
+    left: 100%;
+}
+
+#slide a:first-child{
+    left:0%
+}
+
+section{
+    height: 200px;
+}
+section>div{
+    float: left;
+    height: 100%;
+}
+#recent{
+    width: 40%;
+}
+#tab{
+    list-style: none;
+    overflow: hidden;
+    padding-top: 10px;
+}
+#tab>li{
+    float: left;
+    padding: 3px 5px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    height: 30px;
+    cursor: pointer;
+}
+#tab>.selected{
+    background-color: #ffffff;
+    color: #333333;
+    font-weight: bold;
+    border-bottom: none;
+}
+#notice td{
+    padding: 5px 10px;
+}
+#notice th{
+    font-size: 14px;
+}
+#notice tr>td:first-child:hover{
+    text-decoration: underline;
+}
+
+
+
+#gallery{
+    display: none;
+}
+#gallery img{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    transition-duration: 0.4s;
+    
+}
+#gallery img:hover{
+    transform: rotate(5deg);
+}
+
+#banner{
+    width: 30%;
+    text-align: center;
+    padding-top: 10px;
+}
+#banner img{
+    width: 30%;
+    overflow: hidden;
+}
+#banner a{
+    display: block;
+}
+#banner button{
+    width: 60px;
+    height: 40px;
+}
+
+
+
+
+#quick{
+    width: 30%;
+}
+#quick>a{
+    display: block;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+#quick>a>img{
+    width: 70%;
+    margin: 40px 0 10px;
+}
+#quick>a:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+
+}
+
+
+
+footer{
+    width: 100vw;
+    height: 100px;
+    background-color: #666;
+    color: white;
+}
+footer>.innerDiv>div{
+    float: left;
+}
+#flogo{
+    width: 220px;
+    padding: 30px 10px;
+}
+#fr{
+    width: 980px;
+    padding:10px;
+}
+#fr>div{
+    padding: 5px;
+    line-height: 20px;
+}
+#fr a:hover{
+    text-decoration: underline;
+}
+#popup{
+    /* display: none; */
+    position: absolute;
+    top: 110px;
+    left: 40%;
+    width: 420px;
+    padding: 10px;
+    border: 5px solid #ddd;
+    background-color: #ccc;
+}
+#popup>h2{
+    border-bottom: 1px dotted #999;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+}
+#popup>p{
+    /* line-height: 1.6; */
+}
+#chkPop{
+    float: left;
+}
+#popup button{
+    float: right;
+    /* width: 50px;
+    height: 30px; */
+    border-radius: 7px;
+}
+#popup>div{
+    height: 20px;
+    background-color: #aaa;
+}
