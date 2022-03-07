@@ -5,7 +5,13 @@
     font-family: "맑은 고딕",sans-serif;
     box-sizing: border-box;
 }
+/*
+#cd84f1
+#ff4d4d
+#ffaf40
+#32ff7e
 
+*/
 nav ul{
     list-style: none;
 }
@@ -18,8 +24,62 @@ body{
     color: #333;
     background-color: #ffffff;
 }
-
+#logo{
+    padding: 22.5px 0 0 10px;
+}
 .wrap{
     margin: 0 auto;
     width: 1200px;
+    position: relative;
+}
+
+header{
+    height: 100px;
+    width: 100vw;
+}
+header nav{
+    position: absolute;
+    top: 60px;
+    right: 10px;
+}
+#gnb>li{
+    float: left;
+}
+#gnb>li>a{
+    display: block;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+#gnb>li:hover{
+    background-color: #333;
+    color: #ffffff;
+}
+.submenu{
+    z-index: 9;
+}
+.submenu>li>a{
+    float: left;
+    display: block;
+    width: 160px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+#slide{
+    height: 300px;
+}
+section{
+    height: 200px;
+}
+footer{
+    height: 100px;
+    width: 100vw;
 }
