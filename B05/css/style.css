@@ -195,7 +195,17 @@ section>div{
     font-weight: bold;
 
 }
-
+.h500{
+    height: 500px;
+}
+#map{
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+.buttons{
+    position:absolute
+}
 
 
 footer{
@@ -238,7 +248,7 @@ footer>.innerDiv>div{
     margin-bottom: 5px;
 }
 #popup>p{
-    /* line-height: 1.6; */
+    line-height: 1.6;
 }
 #chkPop{
     float: left;

@@ -7,6 +7,7 @@
     <title>대한은행</title>
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=mfjdxhs1z3&callback=initMap"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -108,6 +109,20 @@
                 <a href="#"><img src="images/card.png" alt="퀵 카드"><p>카드</p></a>
             </div>
         </section>
+        <section class="h500">
+            <h2>찾아오시는 길</h2>
+            <div id="map" >
+
+            </div>
+
+            <div class="buttons">
+                <input type="button" id="NORMAL" value="일반지도" >
+                <input type="button" id="TERRAIN" value="지형도">
+                <input type="button" id="SATELLITE" value="위성지도" >
+                <input type="button" id="HYBRID" value="일반지도" >
+            </div>
+
+        </section>
     </div>
     <footer>
         <div class="innerDiv">
@@ -134,7 +149,7 @@
             첨부파일을 참고하시기 바랍니다. <br><br>
         </p>
         <div>
-            <p id="chkPop"><input type="checkbox">3일동안 열지 않음</p>
+            <p id="chkPop"><input type="checkbox" name ="chk" value="cookie" id="chk">3일동안 열지 않음</p>
             <button class="close">X 닫기</button>
         </div>
     </div>
