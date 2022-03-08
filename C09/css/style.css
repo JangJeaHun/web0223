@@ -1,0 +1,14 @@
+*{
+    font-size: 12px;
+    font-family: "맑은 고딕","돋움",sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul{
+    list-style: none;
+}
+a:visited, a:link{
+    text-decoration: none;
+}

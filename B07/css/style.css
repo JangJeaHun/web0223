@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-size: 12px;
-    font-family: "맑은 고딕",sans-serif;
+    font-family: "맑은 고딕","돋움",sans-serif;
     box-sizing: border-box;
 }
 /*
@@ -32,54 +32,230 @@ body{
     width: 1200px;
     position: relative;
 }
-
+h2{
+    font-size: 18px;
+}
 header{
     height: 100px;
     width: 100vw;
+    background-color: #eee;
 }
 header nav{
     position: absolute;
-    top: 60px;
+    z-index: 8;
+    top: 30px;
     right: 10px;
+    text-align: center;
 }
 #gnb>li{
     float: left;
 }
 #gnb>li>a{
-    display: block;
     width: 160px;
     height: 40px;
-    text-align: center;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 40px;
+    display: block;
+    transition-duration: 0.4s;
 }
-#gnb>li:hover{
+#gnb>li:hover>a{
     background-color: #333;
     color: #ffffff;
 }
 .submenu{
-    z-index: 9;
+    display: none;
+    background: #eee;
 }
 .submenu>li>a{
-    float: left;
     display: block;
-    width: 160px;
     height: 40px;
+    width: 160px;
+    font-size: 14px;
+    line-height: 40px;
+    transition-duration: 0.4s;
+
 }
-
-
-
-
-
+.submenu>li:hover>a{
+    background-color: #333;
+    color: #ffffff;
+    font-weight: 700;
+}
 
 
 
 #slide{
     height: 300px;
+    position: relative;
+    overflow: hidden;
 }
+#slide>a{
+    position: absolute;
+    top: 100%;
+}
+#slide>a:first-child{
+    top: 0;
+}
+
+
+
 section{
     height: 200px;
 }
+section>div{
+    height: 100%;
+    float: left;
+    padding: 5px;
+}
+section>div>h2{
+    padding: 5px;
+}
+
+
+#notice{
+    width: 30%;
+}
+#notice>table{
+    width: 100%;
+    border-spacing: 0;
+}
+#notice th, #notice td{
+    padding: 3px;
+}
+#notice td{
+    border-top: 1px dotted #ccc;
+}
+#notice td:last-child{
+    text-align: center;
+}
+#notice tr:hover>td{
+    background-color: #eee;
+    cursor: pointer;
+}
+
+
+
+#gallery{
+    width: 40%;
+}
+#gallery img{
+    width: 33.33%;
+    float: left;
+    padding: 0 5px;
+}
+#gallery img:hover{
+    opacity: 0.6;
+}
+#banner{
+    width: 30%;
+    background-image: no-repeat url(../images/picture.jpg);
+}
+#banner>p{
+    text-align: center;
+}
+#banner img{
+    display: block;
+    margin: 0 auto;
+}
+#banner button{
+    display: block;
+    padding: 3px 5px;
+    margin: 0 auto;
+}
+.title{
+    padding: 8px;
+    background-color: rgba(0, 0, 0,0.6)
+
+}
+
 footer{
     height: 100px;
     width: 100vw;
+    background-color: #333;
+    color: #eee;
+}
+footer>.wrap>div{
+    float: left;
+}
+#flogo{
+    width: 220px;
+    padding: 27px 10px;
+}
+#flogo img{
+    width: 100%;
+}
+#copy{
+    width: 780px;
+}
+#copy p{
+    padding: 10px;
+}
+#copy a:hover{
+    color: #aaa;
+}
+#sns{
+    width: 200px;
+}
+
+#sns img{
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+}
+#sns>a:hover>img{
+    color: #fff;
+    filter: invert(100%);
+}
+
+#popup{
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 40%;
+    width: 550px;
+    padding: 10px;
+    border: 5px solid #ccc;
+    background-color: #eee;
+}
+#popup p{
+    border-top: solid 1px black;
+    padding: 5px;
+}
+#popup button{
+    float: right;
+    width: 50px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+/*멀티 슬라이드*/
+#mSlide{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.innerSlide{
+    width: 1050px;
+    margin: 0 auto;
+}
+#mSlide div{
+    padding: 10px;
+}
+.item{
+    position: absolute;
+}
+#mSlide i.fa{
+    z-index: 11;
+    position: absolute;
+    font-size:40px;
+    top: 120px;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    color: black;
+    padding: 10px;
+}
+#mSlide .next{
+    right:0;
 }
