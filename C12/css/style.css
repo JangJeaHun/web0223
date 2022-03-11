@@ -57,7 +57,7 @@ header>nav{
     width: 160px;
     transition-duration: 0.4s;
 }
-#gnb>li:hover>a{
+#gnb>li:hover>a, #gnb>li.focusIn>a {
     background-color: black;
     color: white;
 }

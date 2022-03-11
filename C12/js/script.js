@@ -5,6 +5,16 @@ $(document).ready(function(){
         $(".submenu",this).stop().fadeToggle();
     })
 
+    $("#gnb>li").keypress(function(e){
+        e.preventDefault();
+        $(this).addClass('focusIn').siblings().removeClass();
+        $(".submenu").stop().fadeOut();
+        $(".submenu",this).stop().fadeToggle();
+    })
+
+
+
+
     let idx=0;
     setInterval(function(){
         $("#slide>a").eq(idx).animate({
