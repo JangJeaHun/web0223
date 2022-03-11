@@ -27,6 +27,8 @@ a:visited, a:link{
 }
 header{
     height: 100px;
+    width: 100vw;
+    background-color: #eee;
 }
 #logo{
     padding: 25px 10px;
@@ -80,12 +82,16 @@ header{
 #slide{
     height: 300px;
     position: relative;
+    overflow: hidden;
+    
 }
 #slide>a{
     position: absolute;
-    z-index: 1;
+    top: 100%;
 }
-
+#slide>a:first-child{
+    top: 0;
+}
 
 
 
@@ -126,13 +132,39 @@ width: 30%;
     float: left;
     padding: 5px;
 }
+#gallery img:hover{
+    transform: rotate(5deg);
+}
+
+
 #quick{
     width: 30%;
-    
 }
+#quick>a{
+    display: block;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+
+#quick>a>img{
+    width: 80%;
+    padding-top: 40px;
+}
+#quick>a:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
 
 footer{
     height: 100px;
+    width: 100vw;
+    background-color: #eee;
 }
 footer>.wrap>div{
     float: left;
@@ -151,17 +183,27 @@ footer>.wrap>div{
 #fr>div{
     padding: 10px;
 }
+#sns>a{
+    font-size: 15px;
+}
 #sns>a:hover{
     text-decoration: underline;
-    font-weight: 800;
-}
 
-#popup{
+}
+#modal{
     display: none;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 13;
+    background-color: rgba(51, 51, 51, 0.6);
+}
+#popup{
     position: absolute;
     top: 200px;
     width: 500px;
-    height: 220px;
+    height: 300px;
     left: 30%;
     background-color: #eee;
     z-index: 13;
