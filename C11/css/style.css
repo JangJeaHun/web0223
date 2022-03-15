@@ -11,6 +11,10 @@ body{
     color: #333;
     background-color: #fff;
 }
+h2{
+    font-size: 16px;
+    padding: 5px;
+}
 nav ul{
     list-style: none;
 }
@@ -18,4 +22,190 @@ a:visited , a:link{
     text-decoration: none;
     color: inherit;
 }
+.allWrap{
+    width: 1000px;
+    height: 650px;
+}
+.wrap{
+    width: 820px;
+    float: right; 
+}
 
+header{
+    width: 180px;
+    height: 650px;
+    float: left;
+    background-color: #ccc;
+}
+header>nav{
+    padding-top: 30px;
+}
+#logo{
+    width: 180px;
+    padding: 20px 0;
+}
+#gnb>li{
+    position: relative;
+}
+#gnb>li>a{
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(248, 125, 125);
+    margin: 0 auto;
+    font-size: 18px;
+    transition-duration: 0.4s;
+}
+#gnb>li:hover>a{
+    background-color:greenyellow;
+}
+header .submenu{
+    z-index: 1;
+    position: absolute;
+    left: 170px;
+    display: none;
+    top: -40px;
+}
+header .submenu>li>a{
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(252, 180, 180);
+    margin: 0 auto;
+    font-size: 14px;
+    transition-duration: 0.4s;
+}
+header .submenu>li:hover>a{
+    background-color:greenyellow;
+}
+
+
+
+#slide{
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+#slide>a{
+    left: 100%;
+    position: absolute;
+}
+#slide>a:first-child{
+    left:0;
+}
+
+
+
+section{
+    height: 200px;
+}
+section>div{
+    float: left;
+}
+#notice{
+    width: 40%;
+}
+#notice th{
+    padding: 5px;
+    font-size: 14px;
+}
+#notice tr>td{
+    padding: 4px;
+    border-top: 1px dotted #bbb;
+}
+#notice tr>td:first-child{
+    text-align: center;
+}
+#notice tr>td:last-child:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+
+
+
+
+
+#gallery{
+    width: 40%;
+}
+#gallery img{
+    width: 33.33%;
+    float: left;
+    padding: 0 5px;
+}
+#gallery img:hover{
+    transform: rotate(5deg);
+}
+#banner{
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+#banner img{
+    width: 50%;
+}
+#banner button{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    height: 40px;
+    background-color: rgb(136, 135, 135);
+    color: #eee;
+}
+
+footer{
+    height: 100px;
+    background-color: #eee;
+}
+footer>div{
+    float: left;
+}
+#flogo{
+    width: 180px;
+    padding-top: 14px;
+}
+#fr{
+    width: 640px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+#fr>div{
+    padding: 5px 0;
+}
+#footerMenu a{
+    padding: 0 10px;
+}
+#footerMenu a:hover{
+    text-decoration: underline;
+}
+
+#popup{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #eee;
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+}
+#popup>h2{
+    font-size: 16px;
+    padding: 10px;
+}
+#popup>p{
+    padding: 10px;
+}
+.close{
+    float: right;
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+}
