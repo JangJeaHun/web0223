@@ -1,11 +1,12 @@
 $(document).ready(function(){
-    $("#gnb>li").hover(function(){
-        $(".submenu").stop().slideToggle();
-        $("#mBack").stop().slideToggle()
+    $("#gnb>li,#mBack").hover(function(){
+        $(".submenu").stop().slideDown();
+        $("#mBack").stop().slideDown();
     },function(){
-        $(".submenu").stop().slideToggle();
-        $("#mBack").stop().slideToggle()
+        $(".submenu").stop().slideUp();
+        $("#mBack").stop().slideUp();
     })
+    
 
     var idx = 0;
     setInterval(function(){
@@ -24,6 +25,10 @@ $(document).ready(function(){
             left : 0
         })
     },3000)
+    
+    $("#url").change(function(){
+        open($(this).val());
+    })
 
     $(".pop").click(function(){
         $("#modal").fadeIn();

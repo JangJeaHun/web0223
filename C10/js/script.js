@@ -4,7 +4,7 @@ $(document).ready(function(){
         $(".submenu",this).stop().slideToggle();
     },function(){
         $(".submenu",this).stop().slideToggle();
-    })
+    });
 
 
     var idx=0;
@@ -19,12 +19,16 @@ $(document).ready(function(){
         $("#slide>a").eq(idx).fadeIn();
     },3000)
 
+    $("#url").change(function(){
+        open($(this).val());
+    });
+
     $(".pop").click(function(){
         $("#modal").fadeIn();
     })
     $(".close").click(function(){
         $("#modal").hide();
-    })
+    });
 
 })
 

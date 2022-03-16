@@ -34,6 +34,13 @@ $(document).ready(function(){
         })
     },2000)
 
+    $("#url").change(function(){
+        open($(this).val());
+    })
+
+
+
+
     $(".pop").click(function(e){
         e.preventDefault();
         $("#modal").fadeIn();
