@@ -25,7 +25,7 @@ $.fn.mSlide = function(interval){
             $("a>h2",obj).stop(false,true).eq(idx).slideUp();
             $("a>p",obj).stop(false,true).eq(idx).fadeOut();
 
-            if(idx<maxIdx){
+            if(idx<maxIdx){h
                 idx++;
             }else{
                 idx=0;
