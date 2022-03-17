@@ -1,0 +1,243 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans&family=Noto+Sans+KR&family=Roboto+Slab&family=Sanchez&display=swap');
+
+
+
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+a:visited,a:link{
+    text-decoration: none;
+    color: inherit;
+}
+h2{
+    font-size: 18px;
+}
+.row{
+    overflow: hidden;
+    margin: 10px 0;
+}
+.row [class*=span]{
+    float: left;
+    margin-right: 2%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.row [class*=span]:last-child{
+    margin-right: 0;
+}
+
+.span1{
+    width: 6.5%;
+}
+.span2{
+    width: 15%;
+}
+.span3{
+    width: 23.5%;
+}
+.span4{
+    width: 32%;
+}
+.span5{
+    width: 40.5%;
+}
+.span6{
+    width: 49%;
+}
+.span7{
+    width: 57.5%;
+}
+.span8{
+    width: 66%;
+}
+.span9{
+    width: 74.5%;
+}
+.span10{
+    width: 83%;
+}
+.span11{
+    width: 91.5%;
+}
+.span12{
+    width: 100%;
+}
+
+.h80{
+    height: 80px;
+}
+.h100{
+    height: 100px;
+}
+.h150{
+    height: 150px;
+}
+.h180{
+    height: 180px;
+}
+.h200{
+    height: 200px;
+}
+.h250{
+    height: 250px;
+}
+.h300{
+    height: 300px;
+}
+
+.clamp03{
+    -webkit-line-clamp: 3;
+}
+.clamp04{
+    -webkit-line-clamp: 4;
+}
+.clamp05{
+    -webkit-line-clamp: 5;
+}
+.clamp06{
+    -webkit-line-clamp: 6;
+}
+.clamp07{
+    -webkit-line-clamp: 7;
+}
+.clamp08{
+    -webkit-line-clamp: 8;
+}
+
+#mainSlide {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+#mainSlide>a{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+}
+#mainSlide>a:first-child{
+    left: 0;
+}
+#mainSlide>a>h2{
+    color: blueviolet;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    background-color: #eee;
+}
+#mainSlide>a>p{
+    color: red;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #eee;
+}
+.prev, .next{
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.next{
+    right: 100px;
+}
+.prev{
+    left: 100px;
+}
+[class*=fa-angle]:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+
+
+
+.indi{
+    list-style: none;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.indi>li{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background-color: #aaa;
+    transition-duration: 0.4s;
+    float: left;
+}
+.indi>.current{
+    background-color: #333;
+}
+
+.indi>li:last-child{
+    margin-right: 0;
+}
+
+
+
+
+
+#miniSlide{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+#miniSlide>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 100%;
+}
+#miniSlide>a:first-child{
+    left: 0;
+}
+#miniSlide>a>h2{
+    color: blueviolet;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 6px;
+    background-color: #eee;
+}
+#miniSlide>a>p{
+    color: red;
+    position: absolute;
+    font-size: 5px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #eee;
+}
+
+
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
