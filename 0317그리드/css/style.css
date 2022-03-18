@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans&family=Noto+Sans+KR&family=Roboto+Slab&family=Sanchez&display=swap');
-
+html,body{
+    scroll-behavior: smooth;
+}
 
 
 
@@ -156,6 +158,7 @@ h2{
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 1;
 }
 .next{
     right: 100px;
@@ -240,4 +243,27 @@ h2{
 #wrap{
     width: 1200px;
     margin: 0 auto;
+}
+
+
+
+
+#newArrival{
+    width: 100%;
+    height: 300px;
+}
+#innerNew{
+    position: relative;
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.newItem{position: absolute;
+    width: 200px;
+    height: 150px;
+}
+.newItem img{
+    display: block;
+    width: 100%;
 }
