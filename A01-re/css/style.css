@@ -1,0 +1,157 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "맑은 고딕","돋움",sans-serif;
+  font-size: 12px;
+  box-sizing: border-box;
+  color: #333;
+  
+
+}
+
+nav ul{
+  list-style: none; 
+}
+a:link,a:visited{
+  color: inherit;
+  text-decoration: none;
+}
+.wrap{
+  width: 1200px;
+  margin: 0 auto;
+}
+header{
+height: 100px;
+position: relative;
+}
+#slide{
+  height: 300px;
+}
+section{
+  height: 200px;
+  overflow: hidden;
+}
+section>div{
+  float: left;
+}
+footer{
+  height: 100px;
+}
+#logo{
+  padding: 30px 0;
+}
+
+nav{
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+#gnb>li{
+  float: left;
+}
+#gnb>li>a{
+  width: 160px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  background-color: rosybrown;
+  line-height: 40px;
+  font-size: 16px;
+}
+#gnb>li:hover>a{
+  background-color: aliceblue;
+}
+
+.submenu>li{
+  float: left;
+}
+.submenu>li>a{
+  display: block;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  background-color: antiquewhite;
+  line-height: 40px;
+  font-size: 14px;
+}
+.submenu>li>a:hover{
+  background-color: aliceblue;
+}
+.submenu{
+  display: none;
+}
+
+#slide{
+  position: relative;
+  overflow: hidden;
+}
+#slide>a{
+  position: absolute;
+  top: 100%;
+}
+#slide>a:first-child{
+  top: 0;
+}
+
+#recent{
+  width: 30%;
+  height: 200px;
+}
+#tab{
+  width: 100%;
+  overflow: hidden;
+}
+#tab>.selected{
+  background-color: white;
+}
+
+#tab>li{
+  float: left;
+  list-style: none;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #eee;
+}
+
+
+
+#notice{
+  width: 100%;
+}
+#notice td{
+  padding: 4px 0;
+  border-top: dotted #ccc 1px;
+}
+#notice td:first-child{
+  text-align: center;
+}
+
+#notice td:hover{
+  background-color: #eee;
+}
+
+#gallery{
+  display: none;
+}
+
+#gallery img{
+  width: 33.33%;
+}
+
+
+#banner{
+  width: 40%;
+  text-align: center;
+  padding-top: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+#banner img{
+  width: 20%;
+}
+#banner:hover{
+  transform: scale(1.1);
+}
+#quick{
+  width: 30%;
+}
