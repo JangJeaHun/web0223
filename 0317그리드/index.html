@@ -3,317 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>960 그리드 시스템</title>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script src="https://kit.fontawesome.com/a7ee6d9553.js" crossorigin="anonymous"></script>
-
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
-
-    <script src="js/script.js"></script>
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/092cd77c22.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="js/script.js"></script>
 </head>
 <body>
+    <header>
+        <h1 id="logo">NEW Shop</h1>
+        <i class="fa fa-bars showMenu"></i>
+        <nav>
+            <i class="fa fa-close close"></i>
+            <ul id="gnb">
+                <li><a href="index.html"><i class="fa fa-home"> HOME</i></a></li>
+                <li><a href="#">MENU1</a>
+                    <ul class="submenu">
+                        <li><a href="#">submenu1-1</a></li>
+                        <li><a href="#">submenu1-2</a></li>
+                        <li><a href="#">submenu1-3</a></li>
+                        <li><a href="#">submenu1-4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MENU2</a>
+                    <ul class="submenu">
+                        <li><a href="#">submenu2-1</a></li>
+                        <li><a href="#">submenu2-2</a></li>
+                        <li><a href="#">submenu2-3</a></li>
+                        <li><a href="#">submenu2-4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MENU3</a>
+                    <ul class="submenu">
+                        <li><a href="#">submenu3-1</a></li>
+                        <li><a href="#">submenu3-2</a></li>
+                        <li><a href="#">submenu3-3</a></li>
+                        <li><a href="#">submenu3-4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MENU4</a>
+                    <ul class="submenu">
+                        <li><a href="#">submenu4-1</a></li>
+                        <li><a href="#">submenu4-2</a></li>
+                        <li><a href="#">submenu4-3</a></li>
+                        <li><a href="#">submenu4-4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div id="mainSlide">
-        <a href="#" style="background-image: url(https://picsum.photos/id/36/1920/1080)">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
+        <a href="#" style="background-image: url(https://picsum.photos/1920/1080?random=1)">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quo odit voluptatibus dolor, cum rem ipsam optio corrupti hic recusandae numquam alias repellendus ipsum tenetur assumenda maiores! Praesentium, magnam quia consectetur autem officia ut deleniti. Corporis fugiat aut officia impedit?</p>
         </a>
-        <a href="#" style="background-image: url(https://picsum.photos/id/66/1920/1080)">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
+        <a href="#" style="background-image: url(https://picsum.photos/1920/1080?random=2)">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quo odit voluptatibus dolor, cum rem ipsam optio corrupti hic recusandae numquam alias repellendus ipsum tenetur assumenda maiores! Praesentium, magnam quia consectetur autem officia ut deleniti. Corporis fugiat aut officia impedit?</p>
         </a>
-        <a href="#" style="background-image: url(https://picsum.photos/id/77/1920/1080)">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
+        <a href="#" style="background-image: url(https://picsum.photos/1920/1080?random=3)">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quo odit voluptatibus dolor, cum rem ipsam optio corrupti hic recusandae numquam alias repellendus ipsum tenetur assumenda maiores! Praesentium, magnam quia consectetur autem officia ut deleniti. Corporis fugiat aut officia impedit?</p>
         </a>
-        <a href="#" style="background-image: url(https://picsum.photos/id/78/1920/1080)">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
+        <a href="#" style="background-image: url(https://picsum.photos/1920/1080?random=4)">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quo odit voluptatibus dolor, cum rem ipsam optio corrupti hic recusandae numquam alias repellendus ipsum tenetur assumenda maiores! Praesentium, magnam quia consectetur autem officia ut deleniti. Corporis fugiat aut officia impedit?</p>
         </a>
-        <a href="#" style="background-image: url(https://picsum.photos/id/88/1920/1080)">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
+        <a href="#" style="background-image: url(https://picsum.photos/1920/1080?random=5)">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quo odit voluptatibus dolor, cum rem ipsam optio corrupti hic recusandae numquam alias repellendus ipsum tenetur assumenda maiores! Praesentium, magnam quia consectetur autem officia ut deleniti. Corporis fugiat aut officia impedit?</p>
         </a>
         <i class="fa fa-angle-left prev"></i>
         <i class="fa fa-angle-right next"></i>
-        <ul class="indi">
-        </ul>
+        <ul class="indi"></ul>
     </div>
-    
-
-
-
     <div id="wrap">
+        
         <div class="row">
-            <div class="span4 ">
+            <div class="span4">
                 <div id="miniSlide">
-                    <a href="#" style="background-image: url(https://picsum.photos/id/36/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
+                    <a href="#" style="background-image: url(https://picsum.photos/400/300?random=6)">
+                        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quo odit voluptatibus dolor, cum rem ipsam optio corrupti hic recusandae numquam alias repellendus ipsum tenetur assumenda maiores! Praesentium, magnam quia consectetur autem officia ut deleniti. Corporis fugiat aut officia impedit?</p>
                     </a>
-                    <a href="#" style="background-image: url(https://picsum.photos/id/66/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
+                    <a href="#" style="background-image: url(https://picsum.photos/400/300?random=7)">
+                        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quo odit voluptatibus dolor, cum rem ipsam optio corrupti hic recusandae numquam alias repellendus ipsum tenetur assumenda maiores! Praesentium, magnam quia consectetur autem officia ut deleniti. Corporis fugiat aut officia impedit?</p>
                     </a>
-                    <a href="#" style="background-image: url(https://picsum.photos/id/77/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
-                    </a>
-                    <a href="#" style="background-image: url(https://picsum.photos/id/78/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
-                    </a>
-                    <a href="#" style="background-image: url(https://picsum.photos/id/88/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
+                    <a href="#" style="background-image: url(https://picsum.photos/400/300?random=8)">
+                        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus quo odit voluptatibus dolor, cum rem ipsam optio corrupti hic recusandae numquam alias repellendus ipsum tenetur assumenda maiores! Praesentium, magnam quia consectetur autem officia ut deleniti. Corporis fugiat aut officia impedit?</p>
                     </a>
                     <i class="fa fa-angle-left prev"></i>
                     <i class="fa fa-angle-right next"></i>
-                    <ul class="indi">
-                    </ul>
+                    <ul class="indi"></ul>
                 </div>
             </div>
-            <div class="span4 clamp04">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+            <div class="span4">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
-            <div class="span4 clamp04">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="span3 clamp05">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
-            </div>
-            <div class="span3 clamp05">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
-            </div>
-            <div class="span3 clamp05">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
-            </div>
-            <div class="span3 clamp05">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+            <div class="span4">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
         </div>
         <div class="row">
-            <div class="span6">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+            <div class="span3 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
-            <div class="span6">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+            <div class="span3 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
-        </div>
-        <div class="row">
-            <div class="span5 clamp04">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+            <div class="span3 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
-            <div class="span4 clamp04">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
-            </div>
-            <div class="span3 clamp04">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
-            </div>
-        </div>
-    </div>
-    <div id="wrap">
-        <div class="row upup">
-            <div class="span4 ">
-                <div id="miniSlide">
-                    <a href="#" style="background-image: url(https://picsum.photos/id/36/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
-                    </a>
-                    <a href="#" style="background-image: url(https://picsum.photos/id/66/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
-                    </a>
-                    <a href="#" style="background-image: url(https://picsum.photos/id/77/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
-                    </a>
-                    <a href="#" style="background-image: url(https://picsum.photos/id/78/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
-                    </a>
-                    <a href="#" style="background-image: url(https://picsum.photos/id/88/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
-                    </a>
-                    <i class="fa fa-angle-left prev"></i>
-                    <i class="fa fa-angle-right next"></i>
-                    <ul class="indi">
-                    </ul>
-                </div>
-            </div>
-            <div class="span4 clamp04">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
-            </div>
-            <div class="span4 clamp04">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="span3 clamp05">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
-            </div>
-            <div class="span3 clamp05">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
-            </div>
-            <div class="span3 clamp05">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
-            </div>
-            <div class="span3 clamp05">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+            <div class="span3 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
         </div>
         <div class="row">
             <div class="span6">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
             <div class="span6">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
         </div>
         <div class="row">
-            <div class="span5 clamp04">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+            <div class="span5 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
-            <div class="span4 clamp04">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+            <div class="span4 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
-            <div class="span3 clamp04">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
-            </div>
-        </div>
-    </div>
-    <div id="wrap">
-        <div class="row">
-            <div class="span4 ">
-                <div id="miniSlide">
-                    <a href="#" style="background-image: url(https://picsum.photos/id/36/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
-                    </a>
-                    <a href="#" style="background-image: url(https://picsum.photos/id/66/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
-                    </a>
-                    <a href="#" style="background-image: url(https://picsum.photos/id/77/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
-                    </a>
-                    <a href="#" style="background-image: url(https://picsum.photos/id/78/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
-                    </a>
-                    <a href="#" style="background-image: url(https://picsum.photos/id/88/400/300)">
-                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, iure cum repellat dolores earum ad.</p>
-                    </a>
-                    <i class="fa fa-angle-left prev"></i>
-                    <i class="fa fa-angle-right next"></i>
-                    <ul class="indi">
-                    </ul>
-                </div>
-            </div>
-            <div class="span4 clamp04">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
-            </div>
-            <div class="span4 clamp04">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+            <div class="span3 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
         </div>
         <div class="row">
-            <div class="span3 clamp05">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+            <div class="span5 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
-            <div class="span3 clamp05">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+            <div class="span4 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
-            <div class="span3 clamp05">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
-            </div>
-            <div class="span3 clamp05">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+            <div class="span3 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
         </div>
         <div class="row">
-            <div class="span6">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+            <div class="span5 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
-            <div class="span6">
-                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime fugiat expedita, explicabo maiores minus, natus quibusdam nihil illum beatae totam accusamus dolorum dolore amet eveniet veritatis optio adipisci, ab distinctio? </p>
+            <div class="span4 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
+            </div>
+            <div class="span3 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
         </div>
-        <div id="newArrival">
-            <i class="fa fa-angle-left prev span1"></i>
+        <div class="row">
+            <div class="span5 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
+            </div>
+            <div class="span4 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
+            </div>
+            <div class="span3 clamp5">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
+            </div>
+        </div>
+        <h2>New Arrival</h2>
+        <!-- <div id="newArrival">            
             <div id="innerNew">
-                    <a class="newItem" href="#">
-                        <img src="https://picsum.photos/id/1/400/300" alt="상품1">
-                    </a>
-                    <a class="newItem" href="#">
-                        <img src="https://picsum.photos/id/3/400/300" alt="상품2">
-                    </a>
-                    <a class="newItem" href="#">
-                        <img src="https://picsum.photos/id/5/400/300" alt="상품3">
-                    </a>
-                    <a class="newItem" href="#">
-                        <img src="https://picsum.photos/id/7/400/300" alt="상품4">
-                    </a>
-                    <a class="newItem" href="#">
-                        <img src="https://picsum.photos/id/9/400/300" alt="상품5">
-                    </a>
-                    <a class="newItem" href="#">
-                        <img src="https://picsum.photos/id/11/400/300" alt="상품6">
-                    </a>
-                    <a class="newItem" href="#">
-                        <img src="https://picsum.photos/id/15/400/300" alt="상품7">
-                    </a>
-            
-            <i class="fa fa-angle-right next span1"></i>
-            
+                <a class="newItem">
+                    <img src="https://picsum.photos/400/300?random=8" alt="상품 1">
+                </a>            
+                <a class="newItem">
+                    <img src="https://picsum.photos/400/300?random=9" alt="상품 2">
+                </a>            
+                <a class="newItem">
+                    <img src="https://picsum.photos/400/300?random=10" alt="상품 3">
+                </a>            
+                <a class="newItem">
+                    <img src="https://picsum.photos/400/300?random=11" alt="상품 4">
+                </a>            
+                <a class="newItem">
+                    <img src="https://picsum.photos/400/300?random=12" alt="상품 5">
+                </a>            
+                <a class="newItem">
+                    <img src="https://picsum.photos/400/300?random=13" alt="상품 6">
+                </a>            
+                <a class="newItem">
+                    <img src="https://picsum.photos/400/300?random=14" alt="상품 7">
+                </a>            
+                <a class="newItem">
+                    <img src="https://picsum.photos/400/300?random=15" alt="상품 8">
+                </a>            
+                <a class="newItem">
+                    <img src="https://picsum.photos/400/300?random=16" alt="상품 9">
+                </a>            
+            </div>                        
         </div>
-    </div>
-
-
-
-
-    
+    </div> -->
+    <div id="pos"></div>
 </body>
 </html>
