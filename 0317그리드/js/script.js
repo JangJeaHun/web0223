@@ -15,6 +15,18 @@ $(document).ready(function () {
         });
     }
     
+    $(document).scroll(function(){
+        if($(this).scrollTop < 100){
+            $("#goTop").fadeOut();
+        }else{
+            $("#goTop").fadeIn();
+        }
+    });
+
+
+
+
+
     $('.showMenu').click(function() {
         $('header>nav').animate({left: 0});
     });
@@ -23,9 +35,34 @@ $(document).ready(function () {
         $('header>nav').animate({left: '-80%'});
     });
 
+    $(".login").click(function(){
+        $("#modal, #login").fadeIn();
+    })
+    $("#submit").click(function(){
+        $("#modal, #login").hide();
+    })
+
+
+
+
+    let startX, endX;
+
     //터치 이벤트를 이용하여 swipe효과 구현
-    $(window).on("touchstart",function(e){});
-    $(window).on("touchend",function(e){});
+    $(window).on("touchstart",function(e){
+        startX = e.originalEvent.touches[0].pageX;
+    });
+    $(window).on("touchend",function(e){
+        endX = e.originalEvent.changedTouches[0].pageX
+        let dist = endX - startX;
+
+        if(dist>0 && Math.abs(dist)>=120){
+            $("header>nav").animate({left:0});
+        }
+        if(dist<0 && Math.abs(dist)>=120){
+            $("header>nav").animate({left:"-80%"});
+        }
+
+    });
 
 
 
@@ -58,6 +95,12 @@ $(document).ready(function () {
     $('img').mouseout(function () { 
         $('#pos').empty();//비우기
     });
+
+    $(".submenu>li").click(function(){
+        $(this).css({backgroundColor:"rgba(93, 134, 248, 0.349)"})
+    })
+
+
 });
 
 $.fn.itemSlide = function(interval) {

@@ -4,49 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
     <script src="https://kit.fontawesome.com/092cd77c22.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
 <body>
+    <div id="top"></div>
     <header>
         <h1 id="logo">NEW Shop</h1>
         <i class="fa fa-bars showMenu"></i>
+        <i class="fa fa-user-circle login"></i>
         <nav>
             <i class="fa fa-close close"></i>
             <ul id="gnb">
                 <li><a href="index.html"><i class="fa fa-home"> HOME</i></a></li>
                 <li><a href="#">MENU1</a>
                     <ul class="submenu">
-                        <li><a href="#">submenu1-1</a></li>
-                        <li><a href="#">submenu1-2</a></li>
-                        <li><a href="#">submenu1-3</a></li>
-                        <li><a href="#">submenu1-4</a></li>
+                        <li><a href="#"><img src="images/ball.png" alt="서브메뉴 이미지1번째"></a>11</li>
+                        <li><a href="#"><img src="images/hockey.png" alt="서브메뉴 이미지1번째"></a>12</li>
+                        <li><a href="#"><img src="images/karate.png" alt="서브메뉴 이미지1번째"></a>13</li>
+                        <li><a href="#"><img src="images/volleyball.png" alt="서브메뉴 이미지1번째"></a>14</li>
                     </ul>
                 </li>
                 <li><a href="#">MENU2</a>
                     <ul class="submenu">
-                        <li><a href="#">submenu2-1</a></li>
-                        <li><a href="#">submenu2-2</a></li>
-                        <li><a href="#">submenu2-3</a></li>
-                        <li><a href="#">submenu2-4</a></li>
+                        <li><a href="#"><img src="images/ball.png" alt="서브메뉴 이미지1번째"></a>21</li>
+                        <li><a href="#"><img src="images/hockey.png" alt="서브메뉴 이미지1번째"></a>22</li>
+                        <li><a href="#"><img src="images/karate.png" alt="서브메뉴 이미지1번째"></a>23</li>
+                        <li><a href="#"><img src="images/volleyball.png" alt="서브메뉴 이미지1번째"></a>24</li>
                     </ul>
                 </li>
                 <li><a href="#">MENU3</a>
                     <ul class="submenu">
-                        <li><a href="#">submenu3-1</a></li>
-                        <li><a href="#">submenu3-2</a></li>
-                        <li><a href="#">submenu3-3</a></li>
-                        <li><a href="#">submenu3-4</a></li>
+                        <li><a href="#"><img src="images/ball.png" alt="서브메뉴 이미지1번째"></a>31</li>
+                        <li><a href="#"><img src="images/hockey.png" alt="서브메뉴 이미지1번째"></a>32</li>
+                        <li><a href="#"><img src="images/karate.png" alt="서브메뉴 이미지1번째"></a>33</li>
+                        <li><a href="#"><img src="images/volleyball.png" alt="서브메뉴 이미지1번째"></a>34</li>
                     </ul>
                 </li>
                 <li><a href="#">MENU4</a>
                     <ul class="submenu">
-                        <li><a href="#">submenu4-1</a></li>
-                        <li><a href="#">submenu4-2</a></li>
-                        <li><a href="#">submenu4-3</a></li>
-                        <li><a href="#">submenu4-4</a></li>
+                        <li><a href="#"><img src="images/ball.png" alt="서브메뉴 이미지1번째"></a>41</li>
+                        <li><a href="#"><img src="images/hockey.png" alt="서브메뉴 이미지1번째"></a>42</li>
+                        <li><a href="#"><img src="images/karate.png" alt="서브메뉴 이미지1번째"></a>43</li>
+                        <li><a href="#"><img src="images/volleyball.png" alt="서브메뉴 이미지1번째"></a>44</li>
                     </ul>
                 </li>
             </ul>
@@ -192,7 +195,7 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique doloribus molestiae sapiente esse ab veniam accusantium laudantium eligendi commodi nobis? Possimus voluptas voluptatum rem dolore. Quas minus, aspernatur veniam fugit totam ratione dolor eum, eius cumque accusantium ipsam. Id, nemo.</p>
             </div>
         </div>
-        <h2>New Arrival</h2>
+        <!-- <h2>New Arrival</h2> -->
         <!-- <div id="newArrival">            
             <div id="innerNew">
                 <a class="newItem">
@@ -223,8 +226,41 @@
                     <img src="https://picsum.photos/400/300?random=16" alt="상품 9">
                 </a>            
             </div>                        
+        </div> -->
+    </div>
+    <footer>
+        <div class="wrap">
+            <div id="flogo">
+                <h2>NEW SHOP</h2>
+            </div>
+            <div id="copy">
+                <p>Copyright 2022. 0000000 All rights reserved.</p>
+            
+            </div>
         </div>
-    </div> -->
-    <div id="pos"></div>
+
+
+    </footer>
+
+    <div id="pos">
+
+    </div>
+
+    <div id="modal">
+
+    </div>
+
+    <div id="login">
+        <h2>LOGIN</h2>
+        <label for="id">ID</label>
+        <input type="text" id="id"><br>
+        <label for="pw">PW</label>
+        <input type="password" id="pw"><br>
+        <input type="submit" value="로그인" id="submit">
+    </div>
+    <div id="goTop">
+        <a href="#top"><i class="fa fa-arrow-circle-up gotop"></i></a>
+    </div>
 </body>
+
 </html>

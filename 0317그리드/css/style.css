@@ -57,9 +57,61 @@ body {font-family: 'Noto Sans KR', sans-serif;color: #333;font-size: 12px;}
 
 #pos {position: fixed;background-color: rgb(255, 255, 168);line-height: 30px;padding: 0 5px;}
 
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+#modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 8;
+    display: none;
+}
+#login{
+    display: none;
+    position: fixed;
+    z-index: 9;
+    width: 280px;
+    padding: 15px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#login>h2{
+    text-align: center;
+    width: 80px;
+    padding: 10px;
+    background-color: #D35400;
+}
+#login>label{
+    text-align: center;
+    width: 60px;
+    padding: 10px;
+    display: inline-block;
+}
+#login>input{
+    font-size: 16px;
+    padding: 3px;
+}
+#submit{
+    display: block;
+    margin:5px auto 10px;
+    border: none;
+    background-color: #F1C40F;
+}
+
+
+
+
 @media screen and (min-width: 1280px) { /*PC 화면*/
     /* Grid System */
-    .row {overflow: hidden;margin: 10px 0;}
+    .row {overflow: hidden; margin: 10px 0;}
     .row [class*=span] {float: left;margin-right: 2%;
         overflow: hidden;text-overflow: ellipsis;word-wrap: break-word;
         display: -webkit-box;-webkit-box-orient: vertical;
@@ -79,7 +131,7 @@ body {font-family: 'Noto Sans KR', sans-serif;color: #333;font-size: 12px;}
     .span11 {width: 91.5%;}
     .span12 {width: 100%;}
 
-    header {position: fixed;height: 60px;width: 100%;z-index: 8;transition-duration: .8s;}
+    header {position: fixed;height: 60px;width: 100%;z-index: 7;transition-duration: .8s;}
     .headerBack {background-color: #D35400;}
     #logo {color: #fff;padding: 10px 0 0 30px;float: left;}
     .showMenu, .close {display: none;}
@@ -92,9 +144,46 @@ body {font-family: 'Noto Sans KR', sans-serif;color: #333;font-size: 12px;}
     .submenu a {display: block;padding: 10px 0;font-size: 16px;color: #fff;transition-duration: .4s;}
     .submenu a:hover {background-color: #F1C40F;}
     #wrap {width: 1200px;margin: 0 auto;}
+
+    .login{
+        display: none;
+    }
+    footer{
+        background-color: #F1C40F;
+    }
+    #flogo{
+        font-size: 24px;
+
+    }
+    #copy{
+
+        text-align: center;
+    }
+    #goTop{
+        display: none;
+        position: fixed;
+        bottom: 10px;
+        display: none;
+        right: 10px;
+    }
+    .gotop{
+        font-size: 30px;
+    }
+    
+    #copy>p{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    
 }
 
 @media screen and (max-width: 767px) { /*모바일 화면*/
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        }
+
+
     .row {overflow: hidden;margin: 10px 8px;}
     .row [class*=span] {text-overflow: ellipsis;word-wrap: break-word;
         display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 5;
@@ -103,6 +192,55 @@ body {font-family: 'Noto Sans KR', sans-serif;color: #333;font-size: 12px;}
     header {background-color: #fff;position: relative;}
     #logo {text-align: center;}
     .showMenu {position: absolute;font-size: 1.6rem;top: 0;padding: 8px 0 0 8px;}
-    .close {font-size: 1.6rem;float: right;padding: 8px;}
-    header>nav {position: fixed;width: 80%;background-color: rgba(255, 255, 255, 0.75);top: 0;height: 100%;z-index: 8;left: -80%;}
+    .login {
+        position: absolute;
+        right:0;
+        font-size: 1.4rem;
+        top: 0;
+        padding: 8px 8px 0 0;
+    }
+    #gnb>li>a{
+        display: none;
+    }
+    #gnb>li:first-child>a{
+        display: block;
+        width: 100%;
+        font-size: 40px;
+        background-color: beige;
+    }
+
+    .submenu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 10%;
+    }
+    .submenu>li{
+        text-align: center;
+        width: 70px;
+        height: 60px;
+    }
+    .submenu>li>a{
+        display: block;
+        width: 100%;
+        
+    }
+    .submenu>li img{
+        width: 40px;
+    }
+
+    .close {font-size: 1.4rem;float: right;padding: 8px;}
+    header>nav {position: fixed;width: 80%;background-color: rgba(255, 255, 255, 0.75);top: 0;height: 100%;z-index: 7;left: -80%;
+        overflow: auto;
+    }
+
+    #goTop{
+    
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+    .gotop{
+        font-size: 30px;
+    }
 }
