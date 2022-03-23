@@ -21,6 +21,10 @@ a:link,a:visited{
     margin: 10px;
     border: 1px solid black;
 }
+#lv2:disabled{
+    color: rgb(109, 108, 108);
+}
+
 
 #step2{
     display: none;
@@ -38,8 +42,10 @@ label{
 }
 input{
     margin-left: 20px;
-    margin-bottom: 20px;
     border: 1px solid black;
+}
+#step2 input{
+    width: 100px;
 }
 input:focus{
     outline: 1px solid rgb(26, 235, 36);
