@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: "맑은 고딕","돋움",sans-serif;
+    box-sizing: border-box;
+}
+
+a:visited,a:link{
+    color: inherit;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+}
+body{
+    color: #333;
+    background-color: #fff;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+    position: relative;
+}
+#logo{
+    padding-top: 30px;
+}
+header>nav{
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    z-index: 7;
+}
+#gnb>li{
+    float: left;
+}
+#gnb>li>a{
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: olive;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+#gnb>li:hover>a{
+    background-color: green;
+}
+.submenu{
+    display: none;
+}
+.submenu>li>a{
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: olivedrab;
+    color: white;
+}
+.submenu>li:hover>a{
+    background-color: greenyellow;
+    color: black;
+}
+#mBack{
+    display: none;
+    width: 100%;
+    height: 120px;
+    top: 100%;
+    background-color: olivedrab;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+
+
+#slide{
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#slide>a{
+    left: 100%;
+    position: absolute;
+}
+#slide>a:first-child{
+    left: 0;
+}
+
+
+
+
+section{
+    height: 200px;
+}
+section h2{
+    font-size: 16px;
+    padding: 10px;
+}
+section>div{
+    float: left;
+}
+#notice{
+    width: 40%;
+    padding-left: 10px;
+}
+#notice>table{
+    width: 100%;
+}
+#notice td:first-child{
+    text-align: center;
+}
+#notice td{
+    padding: 3px;
+    border-top: #aaa 1px dotted;
+}
+#notice td:last-child:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+
+#gallery{
+    width: 30%;
+}
+#gallery img{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    padding-top: 20px;
+    transition-duration: 0.4s;
+}
+#gallery img:hover{
+    transform: rotate(5deg);
+}
+
+#banner{
+    width: 30%;
+}
+#banner a{
+    display: block;
+    text-align: center;
+}
+#banner img{
+    width: 20%;
+}
+#banner p{
+    background-color: bisque;
+    transition-duration: 0.4s;
+}
+#banner p:hover{
+    transform: scale(1.1);
+}
+
+
+footer{
+    height: 100px;
+    background-color: #eee;
+}
+footer>div{
+    float: left;
+}
+#flogo{
+    padding-top:30px;
+}
+#copy{
+    padding: 26px 0 0 100px;
+}
+#family{
+    padding: 40px 0 0 150px;
+}
+#modal{
+    display: none;
+    background-color: rgba(238, 238, 238, 0.603);
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+#popup{
+    border: 1px solid black;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 630px;
+    height: 250px;
+}
+#popup h2{
+    font-size: 16px;
+    padding: 5px;
+}
+#popup>p{
+    padding: 5px;
+}
+.close{
+    float: right;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: bisque;
+}
