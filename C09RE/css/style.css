@@ -1,0 +1,244 @@
+*{
+    font-size: 12px;
+    font-family: "맑은 고딕 ","돋움",sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #333;
+    background-color: #fff;
+}
+nav ul{
+    list-style: none;
+}
+a:visited,a:link{
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrap{
+    width: 1000px;
+    height: 650px;
+}
+header{
+    width: 180px;
+    height: 650px;
+    float: left;
+}
+#logo{
+    width: 180px;
+    padding-top: 32px;
+}
+nav{
+    padding: 30px 0 0 10px;
+
+}
+#gnb>li>a{
+    display: block;
+    font-size: 16px;
+    background-color: skyblue;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    transition-duration: 0.4s;
+}
+#gnb>li:hover>a{
+    background-color: bisque;
+}
+.submenu{
+    display: none;
+}
+.submenu>li>a{
+    display: block;
+    font-size: 14px;
+    background-color: rgb(185, 202, 248);
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    transition-duration: 0.4s;
+}
+.submenu>li:hover>a{
+    background-color: beige;
+}
+
+
+
+
+.contents{
+    width: 820px;
+    height: 650px;
+    float: left;
+}
+#slide{
+    height: 350px;
+    position: relative;
+}
+#slide>a{
+    position: absolute;
+    display: none;
+}
+#slide>a:first-child{
+    display: block;
+}
+
+
+section{
+    height: 200px;
+    padding-top: 5px;
+}
+section>div{
+    float: left;
+}
+#recent{
+    width: 35%;
+}
+
+#tab{
+    list-style: none;
+    display: inline-block;
+}
+#tab>li{
+    float: left;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #eee;
+    cursor: pointer;
+}
+#tab> .selected{
+    background-color: white;
+}
+
+#notice{
+    width: 100%;
+}
+#notice td{
+    padding-top: 10px;
+    border-top: dotted #aaa 1px;
+}
+#notice td:first-child{
+    text-align: center;
+}
+#notice td:last-child:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+
+
+#gallery{
+    display: none;
+}
+#gallery img{
+
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+    padding-top: 20px;
+    transition-duration: 0.4s;
+}
+#gallery img:hover{
+    transform: rotate(5deg);
+}
+
+
+
+#banner{
+    width: 35%;
+}
+#banner>h2{
+    font-size: 14px;
+}
+#banner>a{
+    text-align: center;
+    display: block;
+    float: left;
+    width: 33.33%;
+    padding-top: 30px;
+    transition-duration: 0.4s;
+}
+
+#banner img{
+    width: 100%;
+    padding: 5px;
+}
+#banner>a:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+#quick{
+    width: 30%;
+    
+}
+#quick>h2{
+    font-size: 14px;
+}
+#quick>a{
+    display: block;
+    margin: 10px auto;
+    background-color: #eee;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    transition-duration: 0.4s;
+}
+
+#quick>a:hover{
+    transform: scale(1.1);
+}
+
+
+#quick>a>p{
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-size: 14px;
+}
+
+
+
+footer{
+    height: 100px;
+}
+footer>div{
+    float: left;
+}
+#footerLogo{
+    padding-top: 30px;
+}
+#fr{
+    padding: 16px 0 0 20px;
+}
+#footerMenu>a:hover{
+    text-decoration: underline;
+}
+
+#popup{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+    background-color: #eee;
+    width: 470px;
+    height: 250px;
+}
+#popup>h2{
+    font-size:14px;
+    padding: 5px;
+}
+#popup>p{
+    padding: 5px;
+}
+.close{
+    float: right;
+    padding: 10px;
+    margin-right: 10px;
+}
