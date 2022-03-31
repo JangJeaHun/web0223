@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a:link,a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+header{
+    width: 1200px;
+    margin: 0 auto;
+    height: 150px;
+}
+
+#gnb>li{
+    float: left;
+    text-align: center;
+    /* border: 1px black solid; */
+    position: relative;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    /* margin-right: -1px; */
+}
+#gnb>li>a{
+    display: block;
+    font-size: 1.4rem;
+    transition-duration: 0.4s;
+    /* border: 1px solid black; */
+    border-spacing: 1px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* background-color: white; */
+}
+
+#gnb>li>a>.fa-arrow-circle-up{
+    display: none;
+}
+
+#gnb>li:hover>a{
+    background-color: beige;
+    border: 1px solid black;
+    
+    border-bottom: none;
+}
+.submenu{
+    display: none;
+    width: 500px;
+    position: absolute;
+    top: 50px;
+    border: 1px solid black;
+    /* border-top: none; */
+    left: 0;
+    height: 30px;
+}
+.submenu>li{
+    float: left;
+    height: 34px;
+
+}
+
+.submenu>li>a{
+    display: block;
+    width: 120px;
+    height: 30px;
+    font-size: 1.1rem;
+    background-color: beige;
+    transition-duration: 0.4s;
+    line-height: 30px;
+}
+.submenu>li>a:hover{
+    background-color: burlywood;
+}
+
+header>nav{
+    position: relative;
+}
+
+
+
+
+#depth1{
+    position: relative;
+    z-index: 4;
+}
+#depth1>li{
+    float: left;
+    width: 160px;
+    height: 50px;
+    background-color: aqua;
+    text-align: center;
+    
+}
+#depth1>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    font-size: 14px;
+    /* border: 1px  solid black; */
+}
+#depth1>li:hover>a{
+    background-color: bisque;
+    border-bottom: none;
+}
+
+
+.depth2{
+    
+    display: none;
+    background-color: bisque;
+    width: 700px;
+    position: absolute;
+    top: 49px;
+    /* border: 1px solid black; */
+    /* border-top: none; */
+    left: 0;
+    height: 500px;
+}
+
+.depth2>li{
+    float: left;
+    width: 160px;
+    height: 50px;
+}
+.depth2>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+#depth1>li:nth-child(2):hover>a{
+    background-color: blueviolet;
+}
+.depth2:nth-child(3){
+    background-color: blueviolet;
+}
+
+#depth1>li:nth-child(3):hover>a{
+    background-color: green;
+}
+#depth1>li:nth-child(4):hover>a{
+    background-color: orange;
+}

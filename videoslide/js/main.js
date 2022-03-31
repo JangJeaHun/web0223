@@ -4,6 +4,17 @@ $(document).ready(function(){
     let vs;
     vSlide();
 
+    $("#gnb>li").hover(function(){
+        $(".submenu").stop().slideDown();
+    },function(){
+        $(".submenu").stop().slideUp();
+        
+    });
+
+
+    $(".menu").click(function(){
+        $("header>nav").fadeToggle();
+    });
     
 
 
@@ -15,10 +26,20 @@ $(document).ready(function(){
             $(document).scrollTop(dist);
         }else{
             $(document).scrollTop(0);
-            
         }
     });
-
+    
+    $(document).scroll(function(){
+        let winH = $(window).height();
+        let docTop = $(document).scrollTop();
+        if(docTop>=winH){
+            $("nav").fadeIn(400);
+            $("header").addClass("fixedHeader");
+        }else{
+            $("nav").fadeOut(400);
+            $("header").removeClass("fixedHeader");
+        }
+    });
     
 
     $(".pause").click(function(){
