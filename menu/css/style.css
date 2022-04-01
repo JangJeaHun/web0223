@@ -111,7 +111,7 @@ header>nav{
 .depth2{
     
     display: none;
-    background-color: bisque;
+    /* background-color: bisque; */
     width: 700px;
     position: absolute;
     top: 49px;
@@ -120,6 +120,7 @@ header>nav{
     left: 0;
     height: 500px;
 }
+
 
 .depth2>li{
     float: left;

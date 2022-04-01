@@ -12,16 +12,10 @@ $(document).ready(function(){
 
     })
 
-    var idx = $(this).index();
-
-    var color = ["bisque","blueviolet","green","orange"];
-
-    var col = color[idx];
-
+  
     $("#depth1>li").hover(
-
         function(){
-            $(".depth2",this).stop().show().css({backgroundColor:col});
+            $(".depth2",this).stop().show();
         },function(){
             $(".depth2",this).stop().hide();
         }
